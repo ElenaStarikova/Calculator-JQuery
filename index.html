@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery3.7.0.js"></script>
+</head>
+<body>
+   
+    <div class="page">
+        <div class="container">
+            <div class="content">
+                <h1 class="title">Рассчитайте стоимость Вашего потолка онлайн!</h1>
+                <div class="room">
+                    <div class="room__first">
+                        <h3 class="room__text">Комната №1</h3>
+                    </div>
+                    <div class="room__next">
+                        <img src="./src/img/pluscycled.png" alt="next room" width="16px" height="16px" class="room__img">
+                        <h3 class="room__text">Добавить комнату</h3>
+                    </div>
+                </div>
+                <div class="holder">
+                    <div class="calculator">
+                        
+                        <form class="calculator__params">
+                            <label class="input">
+                                <p class="input__label">Площадь помещения:</p> 
+                                <div class="input__state ">
+                                    <input type="number"  placeholder="placeholder" class="input__input" id="count" min="10" value="10">
+                                
+                                    <div class="input__control">
+                                        <div class="input__regulator" id="plus">
+                                            <div class='input__svg'>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1_104)">
+                                                <path d="M16 8C16 8.73733 15.936 9.33333 15.1987 9.33333H9.33333V15.1987C9.33333 15.9347 8.73733 16 8 16C7.26267 16 6.66667 15.9347 6.66667 15.1987V9.33333H0.801333C0.0653331 9.33333 0 8.73733 0 8C0 7.26267 0.0653331 6.66667 0.801333 6.66667H6.66667V0.801333C6.66667 0.0639998 7.26267 0 8 0C8.73733 0 9.33333 0.0639998 9.33333 0.801333V6.66667H15.1987C15.936 6.66667 16 7.26267 16 8Z" fill="black"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_1_104">
+                                                <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input__placeholder" id="meaning">10м<sup>2</sup></div>
+                                        <div class="input__regulator" id="minus"> 
+                                            <div class='input__svg'>
+                                                <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H14.5C15.0523 6.5 15.5 6.94772 15.5 7.5V8.5C15.5 9.05228 15.0523 9.5 14.5 9.5H1.5C0.947715 9.5 0.5 9.05228 0.5 8.5V7.5Z" fill="black"/></svg> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </label>
+                            <label class="input">
+                                <p class="input__label">Количество углов:</p> 
+                                <div class="input__state ">
+                                    <input type="number"  placeholder="placeholder" class="input__input" id="count" min="4" value="4">
+                                
+                                    <div class="input__control">
+                                        <div class="input__regulator" id="plus1">
+                                            <div class='input__svg'>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1_104)">
+                                                <path d="M16 8C16 8.73733 15.936 9.33333 15.1987 9.33333H9.33333V15.1987C9.33333 15.9347 8.73733 16 8 16C7.26267 16 6.66667 15.9347 6.66667 15.1987V9.33333H0.801333C0.0653331 9.33333 0 8.73733 0 8C0 7.26267 0.0653331 6.66667 0.801333 6.66667H6.66667V0.801333C6.66667 0.0639998 7.26267 0 8 0C8.73733 0 9.33333 0.0639998 9.33333 0.801333V6.66667H15.1987C15.936 6.66667 16 7.26267 16 8Z" fill="black"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_1_104">
+                                                <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="input__placeholder" id="sht">4 шт</div>
+                                        <div class="input__regulator" id="minus1"> 
+                                            <div class='input__svg'>
+                                                <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H14.5C15.0523 6.5 15.5 6.94772 15.5 7.5V8.5C15.5 9.05228 15.0523 9.5 14.5 9.5H1.5C0.947715 9.5 0.5 9.05228 0.5 8.5V7.5Z" fill="black"/></svg> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </label>
+                            <div class="input">
+                                <div class="input__label">Фактура потолка</div>
+                                <div class="input__state">
+                                    <div class="styled-select">
+                                        <select name="material">
+                                          <option value="1">Матовая </option>
+                                          <option valu2="2">Глянцевая</option>
+                                        </select>
+                                      </div>                                
+                                  
+                                </div>
+                              </div>
+                              <div class="input">
+                                <div class="input__label">Ткань потолка</div>
+                                <div class="input__state">
+                                    <div class="styled-select">
+                                        <select name="color">
+                                          <option value="1">Белая </option>
+                                          <option value="2">Цветная</option>
+                                        </select>
+                                      </div>                                
+                                  
+                                </div>
+                              </div>
+                            </form>
+                                
+                              
+                     
+                        
+                        <div class="calculator__summ">
+                            <div class="calculator__main">Итого:</div>
+                            <div id="answer" class="calculator__main calculator__main-pink"></div>
+                            <div class="calculator__main">руб.</div>
+                            <h3 class="calculator__additional">(Ориентировочная стоимость)</h3>
+                        </div>
+                        <div class="calculator__order">
+                            <button class="calculator__button  calculator__button-action" id="application"><div class="calculator__question">?</div>Оформить заказ</button>
+
+                           
+
+                            <button class="calculator__button calculator__button-download">Скачать смету</button>
+                        </div>
+                    </div >
+                    <div class="mainimg"></div>
+                </div>
+                
+            </div>
+            
+        <div class="modal" id="modal">
+            <div class="modal__window">
+                <div class="modal__cross" id="modal-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+                    </svg>
+                </div>
+                <h3 class="modal__title">Оформить заявку</h3>
+                <form class="modal__application">
+                    <label class="input">
+                        <p class="input__label">Ваше имя:</p> 
+                        <div class="input__state ">
+                            <input type="text" name="name" placeholder="Введите имя" class="input__input" id="name">
+                        
+                            <div class="input__control input__control-name">
+                                                                                    
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="input">
+                        <p class="input__label">Ваша почта:</p> 
+                        <div class="input__state ">
+                            <input type="text" name="name" placeholder="Введите email" class="input__input" id="mail">
+                        
+                            <div class="input__control input__control-name">
+                                                                                    
+                            </div>
+                        </div>
+                    </label>
+                </form>
+            
+            </div> 
+        </div>
+    </div>
+    
+</div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
